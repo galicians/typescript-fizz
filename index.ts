@@ -5,8 +5,16 @@ import './style.css';
 const appDiv: HTMLElement = document.getElementById('app');
 appDiv.innerHTML = `<h1>TypeScript Starter</h1>`;
 
-const fizzbazz = (num: number):number => {
-  
-  while ()
-console.log()
+const fizzbuzz = (limit: number):number => {
+  let num = 0; 
+  while (num < limit) {
+    if (num % 3 == 0) {
+      if (num % 5 == 0) console.log('fizzbuzz')
+      else console.log('fizz')
+    } 
+    if (num % 5 == 0) console.log('buzz')
+
+  }
 };
+
+fizzbuzz(100)
