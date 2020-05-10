@@ -8,7 +8,7 @@ appDiv.innerHTML = `<h1>TypeScript Fizzbuzz</h1>`;
 const fizzbuzz = (limit: number):void => {
   let num = 1; 
 
-  while (num < limit) {
+  while (num <= limit) {
 
     if (num % 3 == 0) {
       if (num % 5 ==0 ) {
@@ -22,7 +22,7 @@ const fizzbuzz = (limit: number):void => {
     appDiv.innerHTML +=  '<br>'
 
   }
-  
+
 };
 
 fizzbuzz(100)
